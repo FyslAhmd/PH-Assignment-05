@@ -37,7 +37,7 @@
                 <div class="flex items-center">
                     <div class="flex items-center mr-10 grayish-color p-3 rounded-full">
                         <img src="assets/checkbox.png" alt="">
-                        <h1 class="text-3xl font-bold ml-4">50</h1>
+                        <h1 id="taskCompleted" class="text-3xl font-bold ml-4">50</h1>
                     </div>
                     <button class="grayish-color p-3 rounded-full"><img src="assets/theme-btn.png" alt=""></button>
                 </div>
@@ -54,7 +54,7 @@
                     </div>
                     <div>
                         <p class="text-base font-medium">Task Assigned</p>
-                        <h1 class="text-3xl font-bold">06</h1>
+                        <h1 id="taskAssigned" class="text-3xl font-bold">6</h1>
                     </div>
                 </div>
 
@@ -90,7 +90,8 @@
                             <p class="text-gray-400 text-sm">Deadline</p>
                             <h3 class="text-base font-medium">21 March 2025</h3>
                         </div>
-                        <button class="px-5 py-3 bg-blue-700 text-white rounded-lg">Completed</button>
+                        <button class="px-5 py-3 bg-blue-700 text-white rounded-lg btn-disabled-task"
+                            onclick="taskCompleted(this)">Completed</button>
                     </div>
                 </div>
 
@@ -105,13 +106,14 @@
                             <p class="text-gray-400 text-sm">Deadline</p>
                             <h3 class="text-base font-medium">21 March 2025</h3>
                         </div>
-                        <button class="px-5 py-3 bg-blue-700 text-white rounded-lg">Completed</button>
+                        <button class="px-5 py-3 bg-blue-700 text-white rounded-lg"
+                            onclick="taskCompleted(this)">Completed</button>
                     </div>
                 </div>
 
                 <div class="grayish-color p-6 rounded-2xl">
                     <p class="bg-white text-base font-normal px-4 py-2 inline rounded">SwiftPay</p>
-                    <h1 class="text-2xl font-normal my-4">Optimize  Home page </h1>
+                    <h1 class="text-2xl font-normal my-4">Optimize Home page </h1>
                     <p class="bg-white text-gray-400 text-base p-4 font-normal rounded-2xl">Debug using Chrome DevTools,
                         check for overlapping</p>
                     <hr class="my-3 border-dashed">
@@ -120,7 +122,8 @@
                             <p class="text-gray-400 text-sm">Deadline</p>
                             <h3 class="text-base font-medium">21 March 2025</h3>
                         </div>
-                        <button class="px-5 py-3 bg-blue-700 text-white rounded-lg">Completed</button>
+                        <button class="px-5 py-3 bg-blue-700 text-white rounded-lg"
+                            onclick="taskCompleted(this)">Completed</button>
                     </div>
                 </div>
 
@@ -135,7 +138,8 @@
                             <p class="text-gray-400 text-sm">Deadline</p>
                             <h3 class="text-base font-medium">21 March 2025</h3>
                         </div>
-                        <button class="px-5 py-3 bg-blue-700 text-white rounded-lg">Completed</button>
+                        <button class="px-5 py-3 bg-blue-700 text-white rounded-lg"
+                            onclick="taskCompleted(this)">Completed</button>
                     </div>
                 </div>
 
@@ -150,7 +154,8 @@
                             <p class="text-gray-400 text-sm">Deadline</p>
                             <h3 class="text-base font-medium">21 March 2025</h3>
                         </div>
-                        <button class="px-5 py-3 bg-blue-700 text-white rounded-lg">Completed</button>
+                        <button class="px-5 py-3 bg-blue-700 text-white rounded-lg"
+                            onclick="taskCompleted(this)">Completed</button>
                     </div>
                 </div>
 
@@ -165,7 +170,8 @@
                             <p class="text-gray-400 text-sm">Deadline</p>
                             <h3 class="text-base font-medium">21 March 2025</h3>
                         </div>
-                        <button class="px-5 py-3 bg-blue-700 text-white rounded-lg">Completed</button>
+                        <button class="px-5 py-3 bg-blue-700 text-white rounded-lg"
+                            onclick="taskCompleted(this)">Completed</button>
                     </div>
                 </div>
             </div>
@@ -175,21 +181,21 @@
             <div class="bg-white rounded-2xl p-6 h-full">
                 <div class="flex justify-center items-center gap-5">
                     <img src="assets/activity.png" alt="">
-                    <h3>Activity Log</h3>
+                    <h3 class="text-xl font-semibold">Activity Log</h3>
                 </div>
                 <button class="px-5 py-3 bg-blue-700 text-white rounded-lg block mx-auto mt-4">Clear History</button>
                 <hr class="my-6 border-dashed">
                 <div>
-                    <p class="grayish-color text-base my-4 p-2 rounded">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
-                    <p class="grayish-color text-base my-4 p-2 rounded">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+                    <p class="grayish-color text-base my-4 p-2 rounded">You have Complete The Task Add Dark Mode at
+                        12:48:15 PM</p>
+                    <p class="grayish-color text-base my-4 p-2 rounded">You have Complete The Task Add Dark Mode at
+                        12:48:15 PM</p>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer>
-
-    </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>
