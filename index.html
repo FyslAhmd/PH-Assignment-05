@@ -39,7 +39,7 @@
                         <img src="assets/checkbox.png" alt="">
                         <h1 id="taskCompleted" class="text-3xl font-bold ml-4">50</h1>
                     </div>
-                    <button class="grayish-color p-3 rounded-full"><img src="assets/theme-btn.png" alt=""></button>
+                    <button id="change-color" class="grayish-color p-3 rounded-full"><img src="assets/theme-btn.png" alt=""></button>
                 </div>
             </nav>
         </div>
@@ -58,8 +58,8 @@
                     </div>
                 </div>
 
-                <div
-                    class="flex items-center gap-5 p-6 rounded-2xl max-w-lg bg-gradient-to-r from-[#3a54fb] to-[#889de4]">
+                <div class="flex items-center gap-5 p-6 rounded-2xl max-w-lg bg-gradient-to-r from-[#3a54fb]
+                    to-[#889de4]" id="discover-blog">
                     <img src="assets/board.png" alt="">
                     <h1 class="text-white text-2xl font-medium">Discover Something New Today!</h1>
                 </div>
@@ -69,8 +69,8 @@
                         <img src="assets/calender.png" alt="">
                     </div>
                     <div>
-                        <p class="text-2xl font-medium">Wed ,</p>
-                        <h1 class="text-3xl font-bold">Jul 28 2025</h1>
+                        <p id="putWeek" class="text-2xl font-medium"></p>
+                        <h1 id="putDate" class="text-3xl font-bold"></h1>
                     </div>
                 </div>
             </div>
@@ -183,7 +183,8 @@
                     <img src="assets/activity.png" alt="">
                     <h3 class="text-xl font-semibold">Activity Log</h3>
                 </div>
-                <button id="clearHistory" class="px-5 py-3 bg-blue-700 text-white rounded-lg block mx-auto mt-4">Clear History</button>
+                <button id="clearHistory" class="px-5 py-3 bg-blue-700 text-white rounded-lg block mx-auto mt-4">Clear
+                    History</button>
                 <hr class="my-6 border-dashed">
 
                 <div id="allHistory">
